@@ -1,0 +1,87 @@
+/* STILE GENERALE */
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* NAVBAR CUSTOM */
+.navbar {
+    border-bottom: 2px solid #2dfc52;
+    background-color: #000000 !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #2dfc52 !important;
+}
+
+/* BLOCCHI E CARDS */
+.bg-hacker {
+    background-color: #0a0a0a;
+    border: 1px solid #2dfc52;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.card-dedsec {
+    background-color: #111111;
+    border: 1px solid #444444;
+    color: white;
+    transition: 0.3s;
+}
+
+.card-dedsec:hover {
+    border-color: #2dfc52;
+}
+
+.testo-verde {
+    color: #2dfc52;
+}
+
+/* BOTTONI */
+.btn-verde {
+    background-color: transparent;
+    color: #2dfc52;
+    border: 1px solid #2dfc52;
+    border-radius: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.btn-verde:hover {
+    background-color: #2dfc52;
+    color: #000000;
+}
+
+/* BLOCCO TERMINALE */
+.terminal {
+    background-color: #000000;
+    border: 1px solid #333333;
+    padding: 15px 20px;
+    font-size: 0.85rem;
+    color: #2dfc52;
+    margin: 15px 0;
+}
+
+.terminal p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.terminal .errore {
+    color: #ff3c3c;
+}
+
+.terminal .output {
+    color: #888888;
+}
+
+footer {
+    border-top: 1px solid #333;
+    padding: 20px 0;
+    color: #666;
+}

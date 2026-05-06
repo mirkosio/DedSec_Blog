@@ -1,11 +1,11 @@
-/* STILE GENERALE */
+/* ===== STILE GENERALE ===== */
 body {
     background-color: #050505;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* NAVBAR CUSTOM */
+/* ===== NAVBAR ===== */
 .navbar {
     border-bottom: 2px solid #2dfc52;
     background-color: #000000 !important;
@@ -19,7 +19,7 @@ body {
     color: #2dfc52 !important;
 }
 
-/* BLOCCHI E CARDS */
+/* ===== BLOCCHI HACKER ===== */
 .bg-hacker {
     background-color: #0a0a0a;
     border: 1px solid #2dfc52;
@@ -27,6 +27,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* ===== CARDS ===== */
 .card-dedsec {
     background-color: #111111;
     border: 1px solid #444444;
@@ -38,11 +39,12 @@ body {
     border-color: #2dfc52;
 }
 
+/* ===== COLORI ===== */
 .testo-verde {
     color: #2dfc52;
 }
 
-/* BOTTONI */
+/* ===== BOTTONI ===== */
 .btn-verde {
     background-color: transparent;
     color: #2dfc52;
@@ -57,7 +59,7 @@ body {
     color: #000000;
 }
 
-/* BLOCCO TERMINALE */
+/* ===== TERMINALE ===== */
 .terminal {
     background-color: #000000;
     border: 1px solid #333333;
@@ -80,6 +82,7 @@ body {
     color: #888888;
 }
 
+/* ===== FOOTER ===== */
 footer {
     border-top: 1px solid #333;
     padding: 20px 0;

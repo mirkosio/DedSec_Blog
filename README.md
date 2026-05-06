@@ -1,6 +1,6 @@
 # DedSec Blog
 
-Sito web tipo 2 (blog tematico) a tema **Watch Dogs 2** del videogioco, realizzato per il progetto di TPS.  
+Sito web tipo 2 (blog tematico) a tema **Watch Dogs 2**, realizzato per il progetto di TPS.  
 Simula il blog dell'organizzazione hacker fittizia **DedSec**, con  operazioni, leak e reclutamento finti.
 
 **Gruppo 8**  

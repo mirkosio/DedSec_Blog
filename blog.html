@@ -1,4 +1,3 @@
-<!--CONFIGURAZIONE PAGINA-->
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -11,7 +10,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand testo-verde" href="index.html"><strong>> DEDSEC</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -29,50 +28,84 @@
         </div>
     </nav>
 
-    <!-- CONTENUTO PRINCIPALE -->
-    <div class="container my-5">
-        <h2 class="testo-verde mb-4">> OPERAZIONI_ARCHIVIATE</h2>
-
-        <!-- GRIGLIA OPERAZIONI -->
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card card-dedsec h-100">
-                    <div class="card-body">
-                        <h5 class="testo-verde">Leak #001: Scrutinio</h5>
-                        <p>Analisi delle falle di sicurezza nei server dei voti scolastici. Abbiamo dimostrato che i dati non sono protetti.</p>
-                        <p class="small text-muted">Autore: Mirko | 12 Apr 2026</p>
-                        <a href="post.html" class="btn btn-verde btn-sm">Leak Completo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card card-dedsec h-100">
-                    <div class="card-body">
-                        <h5 class="testo-verde">Leak #002: Sorveglianza</h5>
-                        <p>Documenti riservati sui nuovi algoritmi di tracciamento facciale del governo per monitorare le manifestazioni.</p>
-                        <p class="small text-muted">Autore: Mattia | 3 Mar 2026</p>
-                        <a href="post.html" class="btn btn-verde btn-sm">Leak Completo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card card-dedsec h-100">
-                    <div class="card-body">
-                        <h5 class="testo-verde">Leak #003: Dati Rubati</h5>
-                        <p>Come le grandi multinazionali vendono la tua vita privata per profitto. Contratti segreti tra Blume e inserzionisti.</p>
-                        <p class="small text-muted">Autore: Cellula Marconi | 15 Feb 2026</p>
-                        <a href="post.html" class="btn btn-verde btn-sm">Leak Completo</a>
-                    </div>
-                </div>
-            </div>
+    <!-- HEADER -->
+    <header class="header-dedsec" style="background-image: url('img/Wallpaper 2.jpg');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 class="display-4 testo-verde">ARCHIVIO OPERAZIONI</h1>
+            <p class="lead">Tutte le operazioni documentate dalla cellula ITI Marconi Dalmine.</p>
         </div>
+    </header>
+
+    <!-- CONTENUTO -->
+    <div class="container my-5">
+
+        <h2 class="testo-verde mb-1">> OPERAZIONI_ARCHIVIATE</h2>
+        <p class="small text-muted mb-4">Totale operazioni: 3 | Cellula: ITI Marconi Dalmine</p>
+
+        <!-- GRIGLIA CARD OPERAZIONI -->
+        <div class="row">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <h5 class="testo-verde">Leak #001: Scrutinio</h5>
+                    <hr class="border-secondary">
+                    <p>Analisi delle vulnerabilità nei server che gestiscono i voti scolastici. I dati degli studenti risultano accessibili senza adeguata protezione.</p>
+                    <ul class="small text-muted">
+                        <li>Database scolastico esposto</li>
+                        <li>Credenziali di accesso deboli</li>
+                        <li>Traffico verso IP esterni non documentati</li>
+                    </ul>
+                    <p class="small text-muted">Autore: Mirko | 12 Apr 2026</p>
+                    <a href="post.html" class="btn btn-verde btn-sm">Leggi</a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <h5 class="testo-verde">Leak #002: Sorveglianza</h5>
+                    <hr class="border-secondary">
+                    <p>Documenti che descrivono l'uso di algoritmi di riconoscimento facciale in spazi pubblici, senza informazione ai cittadini.</p>
+                    <ul class="small text-muted">
+                        <li>Riconoscimento facciale in tempo reale</li>
+                        <li>Archivio biometrico non dichiarato</li>
+                        <li>Integrazione con sistemi urbani</li>
+                    </ul>
+                    <p class="small text-muted">Autore: Mattia | 3 Mar 2026</p>
+                    <a href="post.html" class="btn btn-verde btn-sm">Leggi</a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <h5 class="testo-verde">Leak #003: Dati Venduti</h5>
+                    <hr class="border-secondary">
+                    <p>Contratti che mostrano la cessione di dati personali degli utenti a terze parti a scopo commerciale, senza consenso esplicito.</p>
+                    <ul class="small text-muted">
+                        <li>Profili ceduti a inserzionisti</li>
+                        <li>Nessun consenso degli utenti</li>
+                        <li>Ricavi stimati: 2.4 miliardi</li>
+                    </ul>
+                    <p class="small text-muted">Autore: Cellula Marconi | 15 Feb 2026</p>
+                    <a href="post.html" class="btn btn-verde btn-sm">Leggi</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- NOTA IN FONDO -->
+        <div class="bg-hacker">
+            <p class="small text-muted mb-0">Tutti i contenuti pubblicati sono stati verificati dalla cellula Marconi e sono divulgati nell'interesse pubblico.</p>
+        </div>
+
     </div>
 
     <!-- FOOTER -->
     <footer class="text-center">
-        <p>© 2026 DedSec ITI G. Marconi - Gruppo 8 (Mirko & Mattia)</p>
+        <p>© 2026 DedSec ITI Marconi Dalmine - Gruppo 8 (Mirko & Mattia)</p>
     </footer>
 
     <script src="js/script.js"></script>

@@ -1,4 +1,3 @@
-<!--CONFIGURAZIONE PAGINA-->
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -11,7 +10,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand testo-verde" href="index.html"><strong>> DEDSEC</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -29,35 +28,57 @@
         </div>
     </nav>
 
-    <!-- CONTENUTO PRINCIPALE -->
+    <!-- CONTENUTO -->
     <div class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-lg-8 bg-hacker">
+            <div class="col-lg-8">
 
-                <!-- INTESTAZIONE LEAK -->
-                <h1 class="testo-verde">OPERAZIONE: SCRUTINIO</h1>
-                <p class="text-muted">Autore: Mirko | Data: 12 Apr 2026 | Status: Decriptato</p>
-                <hr class="border-secondary">
-
-                <!-- TESTO -->
-                <p>Abbiamo scoperto che i database scolastici non usano crittografia sicura. Il "Grande Fratello" ti osserva, ma noi osserviamo lui.</p>
-                <p>Il sistema ctOS ha accesso in lettura a tutti i dati degli studenti: voti, presenze, note disciplinari e comunicazioni tra docenti e famiglie.</p>
-
-                <!-- TERMINALE -->
-                <div class="terminal">
-                    <p>> nmap -sV 192.168.1.100</p>
-                    <p class="output">[*] Porta 3306/tcp aperta — MySQL 5.7</p>
-                    <p class="output">[*] Porta 80/tcp aperta — Apache 2.4</p>
-                    <p class="errore">[!] Credenziali default trovate: admin/admin</p>
-                    <p>> SELECT * FROM blume_sync_log LIMIT 3;</p>
-                    <p class="output">| 2026-04-10 | STU_0042 | 185.220.101.47 | READ   |</p>
-                    <p class="output">| 2026-04-10 | STU_0087 | 185.220.101.47 | READ   |</p>
-                    <p class="errore">| 2026-04-11 | ALL      | 185.220.101.47 | EXPORT |</p>
-                    <p class="testo-verde">[✓] Prova raccolta. Dati esportati verso server esterno.</p>
+                <!-- BLOCCO PRINCIPALE LEAK -->
+                <div class="bg-hacker">
+                    <h1 class="testo-verde">OPERAZIONE: SCRUTINIO</h1>
+                    <p class="small text-muted">Autore: Mirko | Data: 12 Apr 2026 | Status: <span class="testo-verde">Pubblicato</span></p>
+                    <hr class="border-secondary">
+                    <p>Durante un'analisi della rete scolastica abbiamo individuato un database accessibile senza autenticazione adeguata. I dati degli studenti risultavano esposti e venivano trasmessi verso indirizzi IP esterni non documentati.</p>
+                    <p>Di seguito il log della scansione effettuata.</p>
+                    <div class="terminal">
+                        <p>> nmap -sV 192.168.1.100</p>
+                        <p class="output">[*] Porta 3306/tcp aperta — MySQL 5.7</p>
+                        <p class="output">[*] Porta 80/tcp aperta — Apache 2.4</p>
+                        <p class="errore">[!] Credenziali deboli rilevate</p>
+                        <p>> SELECT * FROM sync_log LIMIT 3;</p>
+                        <p class="output">| 2026-04-10 | STU_0042 | 185.220.101.47 | READ   |</p>
+                        <p class="output">| 2026-04-10 | STU_0087 | 185.220.101.47 | READ   |</p>
+                        <p class="errore">| 2026-04-11 | ALL      | 185.220.101.47 | EXPORT |</p>
+                        <p class="testo-verde">[✓] Report completato.</p>
+                    </div>
+                    <p>I dati di centinaia di studenti venivano esportati verso server esterni. Pubblichiamo questa documentazione per sensibilizzare sulla sicurezza informatica nelle scuole.</p>
                 </div>
 
-                <p>Questa è la prova che nessuno è al sicuro finché il sistema rimane chiuso e corrotto. Pubblichiamo questi dati per rendervi liberi.</p>
-                <a href="blog.html" class="btn btn-verde">← Torna alle Operazioni</a>
+                <!-- BLOCCO RISULTATI -->
+                <div class="bg-hacker">
+                    <h4 class="testo-verde">Cosa abbiamo trovato</h4>
+                    <hr class="border-secondary">
+                    <ul>
+                        <li>Database MySQL accessibile senza autenticazione sicura</li>
+                        <li>Tabella <strong class="testo-verde">sync_log</strong> con export automatico verso IP esterni</li>
+                        <li>Nessun log di accesso visibile agli amministratori scolastici</li>
+                        <li>Dati di oltre <strong class="testo-verde">400 studenti</strong> esposti</li>
+                    </ul>
+                </div>
+
+                <!-- BLOCCO CONSIGLI -->
+                <div class="bg-hacker">
+                    <h4 class="testo-verde">Consigli</h4>
+                    <hr class="border-secondary">
+                    <ul>
+                        <li>Non trasmettere dati sensibili su reti Wi-Fi pubbliche o scolastiche non protette</li>
+                        <li>Segnala eventuali anomalie al responsabile informatico della scuola</li>
+                        <li>Usa connessioni cifrate quando possibile</li>
+                    </ul>
+                    <a href="join.html" class="btn btn-verde btn-sm">Unisciti a DedSec</a>
+                </div>
+
+                <a href="blog.html" class="btn btn-verde mt-2">← Torna alle Operazioni</a>
 
             </div>
         </div>
@@ -65,7 +86,7 @@
 
     <!-- FOOTER -->
     <footer class="text-center">
-        <p>© 2026 DedSec ITI G. Marconi - Gruppo 8 (Mirko & Mattia)</p>
+        <p>© 2026 DedSec ITI Marconi Dalmine - Gruppo 8 (Mirko & Mattia)</p>
     </footer>
 
     <script src="js/script.js"></script>

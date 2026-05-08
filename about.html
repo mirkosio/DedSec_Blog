@@ -1,4 +1,3 @@
-<!--CONFIGURAZIONE PAGINA-->
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -11,7 +10,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand testo-verde" href="index.html"><strong>> DEDSEC</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -29,41 +28,151 @@
         </div>
     </nav>
 
-    <!-- CONTENUTO PRINCIPALE -->
-    <div class="container my-5">
-        <div class="row align-items-center">
+    <!-- HEADER -->
+    <header class="header-dedsec" style="background-image: url('img/Wallpaper 3.jpg');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <img src="img/no bg/DedSec Logo.png" alt="DedSec Logo" class="img-logo">
+            <h1 class="display-4 testo-verde">CHI SIAMO</h1>
+            <p class="lead">La cellula DedSec dell'ITI Marconi Dalmine.</p>
+        </div>
+    </header>
 
-            <!-- COLONNA SINISTRA: TESTO -->
+    <!-- CONTENUTO -->
+    <div class="container my-5">
+
+        <!-- PRESENTAZIONE -->
+        <div class="row align-items-center mb-5">
+
             <div class="col-md-6">
-                <h2 class="testo-verde">> CHI_SIAMO</h2>
-                <p>Siamo una cellula indipendente della DedSec, un gruppo di hacker etici che operano nell'ombra per portare la luce sulla verità. Nessun leader, nessun volto. Solo informazione e cooperazione.</p>
-                <p><strong class="testo-verde">Mirko:</strong> Network Infiltrator. Specializzato in analisi di rete e penetration testing.</p>
-                <p><strong class="testo-verde">Mattia:</strong> System Architect. Esperto in sviluppo software e reverse engineering.</p>
+                <h2 class="testo-verde">Chi siamo</h2>
+                <p>Siamo una cellula indipendente della DedSec, un gruppo di studenti e appassionati di sicurezza informatica che crede nella trasparenza digitale e nella tutela della privacy.</p>
                 <hr class="border-secondary">
                 <h5 class="testo-verde">I nostri principi:</h5>
                 <ul>
                     <li>La privacy è un diritto, non un privilegio</li>
-                    <li>L'informazione deve essere libera</li>
-                    <li>Nessuno è al sicuro finché il sistema è corrotto</li>
+                    <li>L'informazione deve essere accessibile</li>
+                    <li>La sicurezza informatica riguarda tutti</li>
+                    <li>Trasparenza e responsabilità digitale</li>
                 </ul>
+                <a href="join.html" class="btn btn-verde btn-sm">Unisciti</a>
             </div>
 
-            <!-- COLONNA DESTRA: LOGO -->
             <div class="col-md-6 text-center">
-                <div class="p-5 border border-success bg-dark shadow-lg">
-                    <p class="fw-bold">DEDSEC</p>
-                    <h1 class="testo-verde" style="font-size: 4rem;">☠</h1>
+                <div class="card-dedsec bordo-verde p-5">
+                    <img src="img/no bg/DedSec Logo.png" alt="DedSec Logo" class="img-logo mx-auto d-block">
+                    <p class="fw-bold mt-2">DEDSEC</p>
                     <p class="fw-bold">UNITI PER LA LIBERTÀ</p>
-                    <p class="small text-muted">Cellula ITI G. Marconi — Verona</p>
+                    <p class="small text-muted">Cellula ITI Marconi Dalmine</p>
                 </div>
             </div>
 
         </div>
+
+        <!-- MEMBRI DEDSEC (personaggi di Watch Dogs 2) -->
+        <h4 class="testo-verde mb-1">Membri DedSec</h4>
+        <p class="small text-muted mb-3">Membri fondatori dell'organizzazione DedSec — personaggi di Watch Dogs 2.</p>
+        <div class="row mb-5">
+
+            <div class="col-md-3 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <img src="img/no bg/Marcus Holloway.png" alt="Marcus Holloway" class="img-membro">
+                    <h5 class="testo-verde">Marcus Holloway</h5>
+                    <p class="small text-muted">Fondatore — San Francisco</p>
+                    <hr class="border-secondary">
+                    <p class="small">Hacker prodigio ingiustamente accusato dal sistema ctOS. Ha fondato la cellula di San Francisco.</p>
+                    <ul class="small text-muted">
+                        <li>Hacking avanzato</li>
+                        <li>Ingegneria sociale</li>
+                        <li>Droni e robotica</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <img src="img/no bg/Sitara Dhawan.png" alt="Sitara Dhawan" class="img-membro">
+                    <h5 class="testo-verde">Sitara Dhawan</h5>
+                    <p class="small text-muted">Art Director — San Francisco</p>
+                    <hr class="border-secondary">
+                    <p class="small">Responsabile dell'identità visiva di DedSec. Trasforma le operazioni in messaggi pubblici.</p>
+                    <ul class="small text-muted">
+                        <li>Comunicazione visiva</li>
+                        <li>Social engineering</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <img src="img/no bg/Josh Sauchak.png" alt="Josh Sauchak" class="img-membro">
+                    <h5 class="testo-verde">Josh Sauchak</h5>
+                    <p class="small text-muted">Sviluppatore — San Francisco</p>
+                    <hr class="border-secondary">
+                    <p class="small">Genio dello sviluppo software. Autore degli strumenti usati dalla cellula, incluso il sistema NetHack.</p>
+                    <ul class="small text-muted">
+                        <li>Sviluppo exploit</li>
+                        <li>Crittografia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <img src="img/no bg/Wrench.png" alt="Wrench" class="img-membro">
+                    <h5 class="testo-verde">Wrench</h5>
+                    <p class="small text-muted">Hardware — San Francisco</p>
+                    <hr class="border-secondary">
+                    <p class="small">Esperto di hardware. Costruisce dispositivi personalizzati per le operazioni sul campo.</p>
+                    <ul class="small text-muted">
+                        <li>Hardware hacking</li>
+                        <li>Costruzione dispositivi</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CELLULA MARCONI (Mirko e Mattia) -->
+        <h4 class="testo-verde mb-1">Cellula Marconi</h4>
+        <p class="small text-muted mb-3">I veri autori del sito — ITI Marconi Dalmine, Gruppo 8.</p>
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <h5 class="testo-verde">Mirko Gagu</h5>
+                    <p class="small text-muted">Studente — ITI Marconi Dalmine, 3BI</p>
+                    <hr class="border-secondary">
+                    <p class="small">Appassionato di reti e sicurezza informatica. Ha curato la struttura del sito e le simulazioni di analisi di rete.</p>
+                    <ul class="small text-muted">
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>Reti e sicurezza</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card-dedsec p-3 h-100">
+                    <h5 class="testo-verde">Mattia Casali</h5>
+                    <p class="small text-muted">Studente — ITI Marconi Dalmine, 3BI</p>
+                    <hr class="border-secondary">
+                    <p class="small">Appassionato di sviluppo web e programmazione. Ha contribuito al design del sito e alla gestione dei contenuti.</p>
+                    <ul class="small text-muted">
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>Sviluppo web</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
     <!-- FOOTER -->
     <footer class="text-center">
-        <p>© 2026 DedSec ITI G. Marconi - Gruppo 8 (Mirko & Mattia)</p>
+        <p>© 2026 DedSec ITI Marconi Dalmine - Gruppo 8 (Mirko & Mattia)</p>
     </footer>
 
     <script src="js/script.js"></script>

@@ -1,25 +1,51 @@
+/* ===== FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+
 /* ===== STILE GENERALE ===== */
 body {
     background-color: #050505;
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
 }
 
 /* ===== NAVBAR ===== */
 .navbar {
-    border-bottom: 2px solid #2dfc52;
     background-color: #000000 !important;
+    border-bottom: 2px solid #2dfc52;
 }
 
 .nav-link {
     color: #ffffff !important;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: #2dfc52 !important;
 }
 
-/* ===== BLOCCHI HACKER ===== */
+/* ===== HEADER ===== */
+.header-dedsec {
+    padding: 60px 0 40px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.header-content {
+    position: relative;
+}
+
+/* ===== BLOCCHI ===== */
 .bg-hacker {
     background-color: #0a0a0a;
     border: 1px solid #2dfc52;
@@ -27,21 +53,33 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== CARDS ===== */
+/* ===== CARD ===== */
 .card-dedsec {
     background-color: #111111;
     border: 1px solid #444444;
-    color: white;
-    transition: 0.3s;
+    color: #ffffff;
+    transition: border-color 0.3s;
 }
 
 .card-dedsec:hover {
     border-color: #2dfc52;
 }
 
+.card-dedsec.bordo-verde {
+    border-color: #2dfc52;
+}
+
+.card-dedsec.bordo-rosso {
+    border-color: #ff3c3c;
+}
+
 /* ===== COLORI ===== */
 .testo-verde {
     color: #2dfc52;
+}
+
+.text-muted {
+    color: #aaaaaa !important;
 }
 
 /* ===== BOTTONI ===== */
@@ -51,7 +89,8 @@ body {
     border: 1px solid #2dfc52;
     border-radius: 0;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 8px 18px;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
 }
 
 .btn-verde:hover {
@@ -71,20 +110,36 @@ body {
 
 .terminal p {
     margin: 0;
-    line-height: 1.8;
-}
-
-.terminal .errore {
-    color: #ff3c3c;
+    line-height: 1.9;
 }
 
 .terminal .output {
     color: #888888;
 }
 
+.terminal .errore {
+    color: #ff3c3c;
+}
+
+/* ===== IMMAGINI ===== */
+.img-logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.img-membro {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 12px;
+}
+
 /* ===== FOOTER ===== */
 footer {
-    border-top: 1px solid #333;
+    border-top: 1px solid #333333;
     padding: 20px 0;
-    color: #666;
+    color: #666666;
 }
